@@ -1,7 +1,7 @@
 @import url('../intro/intro__title/intro__title.css');
 @import url('../intro/intro__text/intro__text.css');
-@import url('../intro/intro__text/_type/intro__text_type_quotation.css');
-@import url('../intro/intro__text/_type/intro__text_type_additional.css');
+@import url('../intro/intro__text/intro__text_type/intro__text_type_quotation.css');
+@import url('../intro/intro__text/intro__text_type/intro__text_type_additional.css');
 @import url('../intro/intro__content-row/intro__content-row.css');
 
 
