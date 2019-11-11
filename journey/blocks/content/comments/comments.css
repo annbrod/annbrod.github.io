@@ -1,4 +1,4 @@
-@import url('../comments/__container/comments__container.css');
+@import url('../comments/comments__container/comments__container.css');
 @import url('../comments/comment/comment.css');
 
 .comments {
