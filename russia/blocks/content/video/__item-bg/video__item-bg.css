@@ -1,6 +1,5 @@
 .video__item-bg {
     background-image: linear-gradient(black, black);
-    width: 100%;
     border-radius: 5px;
     opacity: 0.5;
 }

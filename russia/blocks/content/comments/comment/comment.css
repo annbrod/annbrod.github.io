@@ -3,15 +3,6 @@
 @import url('./__author/comment__author.css');
 
 .comment {
-    width: 100%;
+    width: 382px;
     margin: 0;
-}
-
-
-@media screen and (max-width: 768px) {
-    .comment {
-        display: flex;
-        flex-direction: column;
-        
-    }
 }

@@ -1,5 +1,5 @@
 @import url('../__lang/_type/header__lang_selected.css');
-
+@import url('../__lang/_type/header__lang_unselected.css');
 
 .header__lang {
     font-family: 'Inter';
@@ -15,17 +15,5 @@
 
 .header__lang:last-child {
     margin-right: 0;
-    text-decoration: none;
-
 }
 
-.header__lang:last-child:hover {
-    text-decoration: underline;
-}
-
-@media screen and (max-width: 375px) {
-    .header__lang {
-        font-size: 18px;
-    line-height: 17px;
-    }
-}
