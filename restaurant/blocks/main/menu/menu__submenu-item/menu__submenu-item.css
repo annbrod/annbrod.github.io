@@ -1,0 +1,12 @@
+.menu__submenu-item {
+    font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 18px;
+/* or 150% */
+text-decoration: none;
+text-align: center;
+
+color: #333333;
+}

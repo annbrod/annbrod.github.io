@@ -1,0 +1,9 @@
+.header__title {
+    font-family: 'Banny';
+    font-size: 96px;
+    
+    margin-top: 0;
+    margin-bottom: 11px;
+    text-align: center;
+    text-transform: uppercase;
+}

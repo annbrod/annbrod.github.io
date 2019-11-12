@@ -1,0 +1,11 @@
+.main-image__bg {
+width: auto;
+max-width: 475px;
+height: 100%;
+max-height: 475px;
+background-size: cover;
+box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+border-radius: 5px;
+
+position: relative;
+}

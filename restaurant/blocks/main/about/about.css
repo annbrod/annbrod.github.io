@@ -1,0 +1,9 @@
+.about {
+    
+    width: 90%;
+    max-width:  1441px;
+    margin: 100px auto 100px;
+    display: flex;
+    justify-content: space-evenly;
+   
+}

@@ -1,0 +1,10 @@
+.header__social-item:hover .button-icon path  {
+    fill: #FFD600;
+    transition: 1s ease; 
+}
+
+.down-button:hover .button-icon path {
+    fill: #FFD600;
+    transition: 1s ease; 
+    transform: translateY(5px);   
+}

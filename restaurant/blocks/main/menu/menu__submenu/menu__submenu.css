@@ -1,0 +1,6 @@
+.menu__submenu {
+    width: 50%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}

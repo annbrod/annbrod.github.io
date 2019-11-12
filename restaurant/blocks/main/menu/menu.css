@@ -1,0 +1,17 @@
+@import url('menu__paragraph/menu__paragraph.css');
+@import url('menu__submenu/menu__submenu.css');
+@import url('menu__submenu-item/menu__submenu-item.css');
+@import url('menu__list/menu__list.css');
+@import url('menu__cell/menu__cell.css');
+@import url('menu__list/menu__list_hidden.css');
+
+.menu {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    max-width:  1441px;
+    margin: 100px auto;
+    
+   
+}
+

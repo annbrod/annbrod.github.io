@@ -1,0 +1,4 @@
+.contacts__form-submission {
+    display: flex;
+    flex-direction: row; 
+}

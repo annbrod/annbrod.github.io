@@ -1,0 +1,14 @@
+@import url('contacts__form_inputs.css');
+@import url('contacts__input.css');
+@import url('contacts__input_area.css');
+@import url('contacts__form_button.css');
+@import url('contacts__form-submission.css');
+@import url('contacts__form-information.css');
+
+.contacts__form {
+    width: 90%;
+    margin: 30px  auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

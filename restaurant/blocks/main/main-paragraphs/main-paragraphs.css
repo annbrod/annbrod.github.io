@@ -1,0 +1,7 @@
+@import url('../main-paragraph/main-paragraph.css');
+@import url('../main-paragraph/main-paragraph_accent.css');
+@import url('../main-paragraphs/main-paragraphs_theme_dark.css');
+
+.main-paragraphs {
+    margin-top: 0;
+}

@@ -1,0 +1,42 @@
+@font-face {
+    src: url('../fonts/Banny-Round.woff');
+    font-family: 'Banny';
+    font-style: normal;
+}
+
+@font-face {
+    src: url('../fonts/Banny-BoldRound.woff');
+    font-family: 'Banny';
+    font-style: bold;
+}
+
+
+
+.page {
+    
+    max-width: 1441px;
+    margin: 0 auto;
+    background-color: white;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+}
+
+.link {
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}

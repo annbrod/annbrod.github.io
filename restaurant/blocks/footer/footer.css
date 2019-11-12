@@ -1,0 +1,11 @@
+@import url('./footer__copyright.css');
+.footer {
+    width: 100%;
+    max-width:  1441px;
+    min-height: 80px;
+    margin: 100px auto 0;
+    padding: 1px 0;
+    background-color: rgba(0, 0, 0, 0.9);;
+  
+
+}

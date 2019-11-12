@@ -1,0 +1,8 @@
+.header__social-item {
+    margin-bottom: 20px;
+}
+
+.header__social-item:last-of-type {
+    margin-bottom: 0;
+}
+

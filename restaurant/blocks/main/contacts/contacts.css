@@ -1,0 +1,10 @@
+@import url('./contacts__form/contacts__form.css');
+
+.contacts {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    max-width:  1441px;
+    margin: 100px auto;
+    
+}

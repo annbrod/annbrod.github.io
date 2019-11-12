@@ -1,0 +1,11 @@
+@import url('../main-image/main-image__bg/main-image__bg.css');
+
+
+.main-image {
+height: calc(100vh - 200px);   
+position: relative;
+max-width: 475px;
+max-height: 475px;
+
+}
+

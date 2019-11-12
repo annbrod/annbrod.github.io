@@ -1,0 +1,9 @@
+.team {
+    position: relative;
+    width: 100%;
+    max-width:  1441px;
+    margin: 100px auto;
+    padding: 1px 0;
+    background-image: url('./specialty\'s-bg.jpg');
+    color: white;
+}

@@ -1,0 +1,25 @@
+.contacts__form-button {
+    width: 50%;
+    height: 60px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    /* or 167% */
+  
+    text-align: center;
+  
+    color: #FFFFFF;
+  
+    background: #E8C300;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    @media screen and (max-width: 980px) {
+      .contacts__form-button {
+        position: static;
+        margin-bottom: 40px;
+      }
+    }

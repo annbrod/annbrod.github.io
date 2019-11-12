@@ -1,0 +1,11 @@
+.main-title {
+    font-family: 'Banny';
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 48px;
+/* or 133% */
+margin: 0;
+text-align: center;
+text-transform: uppercase;
+}

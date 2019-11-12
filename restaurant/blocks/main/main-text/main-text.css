@@ -1,0 +1,12 @@
+@import url('../main-title/main-title.css');
+@import url('../main/title-figure/title-figure.css');
+@import url('../main-paragraphs/main-paragraphs.css');
+@import url('../main-subtitle/main-subtitle.css');
+
+.main-text {
+   
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}

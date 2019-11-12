@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hungry People</title>
+    <link rel="stylesheet" href="./vendor/normalize.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body class="page">
+
+    <header class="header">
+        <nav class="header__menu">
+            <ul class="header__menu-block">
+                 <li><a class="link header__menu-item" href ="#about">
+                    About
+                </a></li>
+                <li><a class="link header__menu-item" href="#team"> 
+                    Team
+                </a></li>
+                <li><a class="link header__menu-item" href="#booking">
+                    Booking
+                </a></li>
+            </ul>
+            <svg class="header__logo" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M146.341 69.0789c-1.407 0-6.754 1.9737-9.568 3.1016-.281-1.1279-1.407-1.9737-2.814-1.9737s-2.815.8458-2.815 1.9737l-5.347-.8459c-.844-11.5602-5.347-21.7105-12.382-29.8872l3.095-4.5113c.845.5639 2.533.5639 3.377-.5639 1.126-1.1278 1.408-2.5376.563-3.3835 2.815-1.1278 8.162-3.3834 9.006-4.5113 1.126-1.4097.281-4.2293-1.689-6.4849-2.251-1.9737-5.065-2.8196-6.472-1.6917-1.126.8458-3.378 6.203-4.503 9.0225-.845-.5639-2.533-.2819-3.377.5639-1.126 1.1278-1.407 2.5376-.563 3.3835l-4.503 3.1015c-8.161-7.0489-18.5741-11.5602-29.8312-12.406l-.8442-5.3572c1.1257-.2819 1.9699-1.4098 1.9699-2.8195 0-1.4098-.8442-2.5376-1.9699-2.8196 1.1257-2.8195 3.0956-8.17667 3.0956-9.58644C80.4878 1.40977 77.955 0 74.8593 0c-3.0957 0-5.6285 1.40977-5.91 3.38346 0 1.40977 1.97 6.76694 3.0957 9.58644-1.1257.282-1.9699 1.4098-1.9699 2.8196 0 1.4097.8442 2.8195 1.9699 2.8195l-.8442 5.3572c-11.5385.8458-21.6698 5.3571-29.8312 12.406l-4.5028-3.1015c.5628-.8459.5628-2.5376-.5629-3.3835-1.1257-1.1278-2.5328-1.4098-3.3771-.5639-1.1257-2.8195-3.3771-7.8947-4.5028-9.0225-1.4071-1.1279-4.2214-.282-6.1914 1.9736-2.2514 1.9737-3.0956 4.7933-1.9699 6.485.8442 1.1278 6.1913 3.3835 9.0056 4.5113-.5629.8458-.2814 2.5376.5628 3.3834 1.1258 1.1279 2.5329 1.4098 3.3772.564l3.0956 4.5112c-7.0356 8.1767-11.5384 18.609-12.3827 29.8872l-5.3471.8459c-.2814-1.1278-1.4071-1.9737-2.8142-1.9737-1.4072 0-2.5329.8459-2.8143 1.9737-2.8143-1.1278-8.16136-3.1015-9.56849-3.1015C1.40713 69.6429 0 72.1805 0 75.282s1.40713 5.6391 3.37711 5.921c1.40713 0 6.75419-1.9737 9.56849-3.1015.2814 1.1278 1.4071 1.9737 2.8143 1.9737 1.4071 0 2.8142-.8459 2.8142-1.9737l5.3471.8459c.8443 11.5601 5.3471 21.7106 12.3827 29.8876l-2.8142 4.229c-.8443-.564-2.5328-.564-3.3771.564-1.1257 1.128-1.4072 2.537-.5629 3.383-2.8142 1.128-7.8799 3.384-9.0056 4.512-1.1257 1.409-.2814 4.229 1.6885 6.485 2.2515 2.255 5.0657 3.101 6.4728 1.691 1.1257-.846 3.3772-6.203 4.5029-9.022.8442.564 2.5328.282 3.3771-.564 1.1257-1.128 1.4071-2.538.5628-3.384l4.5028-3.101c8.1614 7.049 18.5741 11.56 29.8312 12.406l.8443 5.357c-1.1257.282-1.97 1.41-1.97 2.82 0 1.409.8443 2.537 1.97 2.819-1.1257 2.82-3.0957 8.177-3.0957 9.587.2814 1.973 2.8142 3.383 5.9099 3.383 3.0957 0 5.6285-1.41 5.91-3.383 0-1.41-1.97-6.767-3.0957-9.587 1.1257-.282 1.97-1.41 1.97-2.819 0-1.41-.8443-2.82-1.97-2.82l.8443-5.357c11.5384-.846 21.6697-5.357 29.8307-12.406l4.503 3.101c-.563.846-.563 2.538.563 3.384 1.126 1.128 2.533 1.41 3.377.564 1.126 2.819 3.377 8.176 4.503 9.022 1.407 1.128 4.221.282 6.473-1.691 2.251-2.256 3.095-5.076 1.688-6.485-.844-1.128-6.191-3.384-9.005-4.512.563-.846.281-2.537-.563-3.383-1.126-1.128-2.533-1.41-3.377-.564l-3.096-4.511c7.036-8.177 11.539-18.6094 12.383-29.8876l5.347-.8458c.281 1.1278 1.407 1.9736 2.814 1.9736s2.533-.8458 2.814-1.9736c2.815 1.1278 8.162 3.1015 9.569 3.1015C148.593 80.6391 150 78.1015 150 75c-.563-2.8195-1.97-5.6391-3.659-5.9211zM30.9569 76.9737c-1.1258 0-1.97-.8459-1.97-1.9737 0-1.1278.8442-1.9737 1.97-1.9737 1.1257 0 1.9699.8459 1.9699 1.9737 0 1.1278-.8442 1.9737-1.9699 1.9737zm73.4521-34.3985c.844-.8459 1.97-.8459 2.814 0 .845.8459.845 1.9737 0 2.8195-.844.8459-1.97.8459-2.814 0-.563-.8458-.563-1.9736 0-2.8195zM74.8593 29.3233c1.1257 0 1.97.8459 1.97 1.9737 0 1.1278-.8443 1.9737-1.97 1.9737s-1.97-.8459-1.97-1.9737c0-1.1278.8443-1.9737 1.97-1.9737zm-32.364 13.2519c.8443-.8459 1.97-.8459 2.8143 0 .8443.8459.8443 1.9737 0 2.8195-.8443.8459-1.97.8459-2.8143 0-.5628-.8458-.5628-1.9736 0-2.8195zm5.0657 8.1767l2.2514 2.2556c.5628.5639 1.1257.5639 1.6885.282l3.0957 3.1015c-.8443 1.9737 0 5.0752 2.5329 7.6128 2.8142 2.8195 6.7542 3.6654 8.4427 1.9736-2.2514 2.2557-3.6585 5.3572-3.6585 8.7406v-.8458H50.9381c-.2814 0-.5629-.282-.5629-.8459 0-.5639.2815-.8458.5629-.8458h11.5385v-.282c0-.8459-.8443-1.6917-1.6886-1.6917H49.8124c-.5629 0-1.97 1.6917-2.8143 3.1015H43.621c-.2814-.5639-.8443-1.1278-1.4071-1.1278h-3.6585c.5628-7.8948 3.6585-15.5076 9.0056-21.4286zm-2.2514 56.6731c-.8443.846-1.97.846-2.8143 0-.8443-.846-.8443-1.974 0-2.82.8443-.846 1.97-.846 2.8143 0 .8443.846.8443 1.974 0 2.82zm2.2514-8.1769c-5.3471-5.921-8.7242-13.8158-9.2871-22.2744h3.6586c.5628 0 1.4071-.5639 1.4071-1.1278h3.0957c.8443 1.4097 2.2514 3.3834 2.8142 3.3834h10.9756c.8443 0 1.6886-.5639 1.6886-1.4097v-.564H50.9381c-.2814 0-.5629-.2819-.5629-.8458 0-.5639.2815-.8459.5629-.8459h11.5385v-.8459c0 3.3835 1.4071 6.485 3.6585 8.7407-1.6886-1.6918-5.6285-.8459-8.4428 1.9736-2.5328 2.5376-3.3771 5.6391-2.5328 7.6128l-3.0957 3.1015c-.5629-.2819-1.4071-.2819-1.6886.282l-2.8142 2.8195zm27.2983 21.7109c-1.1257 0-1.97-.846-1.97-1.974 0-1.128.8443-1.974 1.97-1.974s1.97.846 1.97 1.974c0 1.128-.8443 1.974-1.97 1.974zm32.3637-13.534c-.844.846-1.97.846-2.814 0-.844-.846-.844-1.974 0-2.82.844-.846 1.97-.846 2.814 0 .845.846.845 1.974 0 2.82zm-5.065-8.1769l-2.2518-2.2556c-.5629-.5639-1.1257-.5639-1.6886-.282L95.122 93.609c.8442-1.9737-.0001-5.0752-2.5329-7.6128-2.8142-2.8195-6.7542-3.6654-8.4428-1.9736-1.6885 1.6917-.8442 5.6391 1.97 8.4586 2.5329 2.5376 5.6285 3.3835 7.5985 2.5376l3.0957 3.1015c-.2814.5639-.2814 1.4098.2814 1.6917l2.2514 2.256c-5.9099 5.357-13.5084 8.74-21.9512 9.304v-3.665c0-.564-.5628-1.41-1.1257-1.41v-3.383c1.1257-.846 3.0957-2.256 3.0957-2.82V89.0978c0-.8459-.8443-1.6918-1.6885-1.6918h-.2815v11.5602c0 .2819-.2814.5639-.8442.5639-.5629 0-.8443-.282-.8443-.5639V87.688H74.015v11.2782c0 .2819-.2814.5639-.8443.5639-.5628 0-.8442-.282-.8442-.5639V87.688h-.5629c-.8443 0-1.4071.8458-1.4071 1.6917v10.9963c0 .564 1.97 1.974 3.3771 2.819v3.102c-.5629.282-1.1257.846-1.1257 1.41v3.665c-8.4428-.564-16.3227-3.947-22.2327-9.304l2.2514-2.256c.5629-.5639.5629-1.1278.2815-1.6917l3.0957-3.1015c1.9699.8459 5.0656 0 7.5985-2.5376 2.8142-2.8195 3.6585-6.7669 1.9699-8.4586 2.2514 2.2556 5.3471 3.6654 8.7242 3.6654 7.0357 0 12.3828-5.6391 12.3828-12.406 0-7.0489-5.6285-12.4061-12.3828-12.4061-3.3771 0-6.4728 1.4098-8.7242 3.6655 1.6886-1.6918.8443-5.6391-1.9699-8.4587-2.5329-2.5376-5.6286-3.3834-7.5985-2.5376l-3.0957-3.1015c.2814-.5639.2814-1.4098-.2815-1.6917l-2.2514-2.2557c5.91-5.3571 13.7899-8.7406 22.2327-9.3045v3.6654c0 .564.5628 1.4098 1.1257 1.4098v3.1015c-1.4071.8459-3.3771 2.2557-3.3771 2.8196v10.9962c0 .8459.5628 1.6917 1.4071 1.6917h.5629V51.0338c0-.2819.2814-.5639.8442-.5639.5629 0 .8443.282.8443.5639V62.594h1.6886V51.0338c0-.2819.2814-.5639.8443-.5639.5628 0 .8442.282.8442.5639V62.594h.2815c.8442 0 1.6885-.8459 1.6885-1.6917V49.906c0-.5639-1.6885-1.9737-3.0957-2.8195V43.703c.5629-.2819 1.1257-.8459 1.1257-1.4098v-3.6654c8.4428.5639 16.0413 3.9474 21.9512 9.0226l-2.2514 2.2556c-.5628.5639-.5628 1.1278-.2814 1.6918l-3.0957 3.1014c-1.97-.8458-5.0656.0001-7.5985 2.5377-2.8142 2.8195-3.6585 6.7669-1.97 8.4586 1.6886 1.6917 5.6286.8459 8.4428-1.9737 2.5328-2.5376 3.3771-5.6391 2.5329-7.6128l3.0956-3.1015c.5629.282 1.4072.282 1.6886-.2819l2.2518-2.2557c5.347 5.9211 8.724 13.5339 9.287 21.9925h-3.659c-.563 0-1.407.5639-1.407 1.1278h-3.377c-.844-1.1278-2.252-3.1015-2.814-3.1015H89.212c-.8443 0-1.6885.8459-1.6885 1.6918v.2819h11.257c.2814 0 .5628.282.5628.8459 0 .5639-.2814.8458-.5628.8458h-11.257v1.4098h11.257c.2814 0 .5628.282.5628.8459 0 .5639-.2814.8458-.5628.8458h-11.257v.564c0 .8458.8442 1.4097 1.6885 1.4097h10.976c.562 0 1.97-1.9737 2.814-3.3834h3.096c.281.5639.844 1.1278 1.407 1.1278h3.658c-.281 8.7406-3.658 16.3534-9.005 22.2744zM66.9794 75c0-4.2293 3.3771-7.8947 7.8799-7.8947 4.2214 0 7.8799 3.3834 7.8799 7.8947 0 4.2293-3.3771 7.8947-7.8799 7.8947-4.2214 0-7.8799-3.3834-7.8799-7.8947zm51.7826 1.9737c-1.126 0-1.97-.8459-1.97-1.9737 0-1.1278.844-1.9737 1.97-1.9737 1.125 0 1.97.8459 1.97 1.9737 0 1.1278-.845 1.9737-1.97 1.9737z" fill="#FFD600"/></svg>
+            <ul class="header__menu-block">
+                <li><a class="link header__menu-item" href="#menu">
+                    Menu
+                </a></li>
+                <li><a class="link header__menu-item" href="#events">
+                    Events
+                </a></li>
+                <li> <a class="link header__menu-item" href="#contact">
+                    Contact
+                </a></li>
+            </ul>
+        </nav>
+        <div class="header__intro">
+            <p class="header__information">
+                Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM
+            </p>
+            <div class="header__main">
+                <p class="header__subtitle"> RESTAURANT</p>
+                <h1 class="header__title">hungry people</h1>
+                <div class="title-figure">
+                </div>
+                <div class="header__buttons">
+                    <a href ="#booking">
+                        <button class="header__button">Book table</button>
+                    </a>
+                    <a href="#about">
+                        <button class="header__button">Explore</button>
+                    </a>
+                </div>    
+                <a class="down-button" href="#about"><svg class="button-icon" width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="31" cy="31" r="30" stroke="#fff" stroke-opacity=".2"/><circle cx="31" cy="31" fill="#fff" r="20"/><path d="M30.375 33.25l-5.313-5.313a.904.904 0 01-.273-.664c0-.26.091-.481.273-.664l.899-.859a.904.904 0 01.664-.273c.26 0 .482.09.664.273l3.75 3.75 3.75-3.75a.904.904 0 01.664-.273c.26 0 .482.09.664.273l.899.86a.904.904 0 01.273.663c0 .26-.091.482-.273.665l-5.313 5.312a.904.904 0 01-.664.273.904.904 0 01-.664-.273z" fill="#333"/></svg></a>        
+            </div> 
+            <div class="header__social">
+                <a href="#" class="header__social-item"><svg class="button-icon" width="62" height="62" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="31" cy="31" r="30" stroke="#fff" stroke-opacity=".2"/><path d="M28.8516 41.9839v-8.9453h-3.0078v-3.5547h3.0078v-2.8125c0-1.4844.4166-2.6302 1.25-3.4375.8333-.8333 1.9401-1.25 3.3203-1.25 1.1198 0 2.0312.0521 2.7343.1562v3.1641h-1.875c-.7031 0-1.1848.1562-1.4453.4687-.2083.2605-.3125.6771-.3125 1.25v2.461h3.3204l-.4688 3.5547h-2.8516v8.9453h-3.6718z" fill="#fff"/></svg></a>
+                <a href="#" class="header__social-item"><svg class="button-icon" width="62" height="62" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="31" cy="31" r="30" stroke="#fff" stroke-opacity=".2"/><path d="M38.9297 27.9214c.026.1042.0391.2734.0391.5078 0 1.875-.4558 3.6849-1.3672 5.4297-.9375 1.8489-2.2526 3.3203-3.9454 4.414-1.8489 1.224-3.9713 1.836-6.3671 1.836-2.2917 0-4.3881-.612-6.2891-1.836.2865.0261.612.0391.9766.0391 1.901 0 3.6067-.5859 5.1172-1.7578-.9115 0-1.7188-.2604-2.4219-.7813-.6771-.5468-1.1459-1.2239-1.4063-2.0312.2604.026.5078.0391.7422.0391.3646 0 .7292-.0391 1.0938-.1172-.9375-.2084-1.7188-.6901-2.3438-1.4453-.625-.7552-.9375-1.6146-.9375-2.5782v-.0781c.5729.3386 1.1849.5208 1.8359.5469-.5468-.3906-.9895-.8854-1.3281-1.4844-.3385-.5989-.5078-1.25-.5078-1.9531 0-.7292.1953-1.4193.5859-2.0703 1.0157 1.276 2.2527 2.2916 3.711 3.0468 1.4844.7553 3.0599 1.1719 4.7266 1.25-.0521-.3125-.0782-.625-.0782-.9375 0-.7291.1823-1.4062.5469-2.0312.3646-.651.8594-1.1589 1.4844-1.5234.625-.3646 1.3021-.5469 2.0312-.5469.599 0 1.1459.1172 1.6407.3515.5208.2344.9765.5469 1.3671.9375.9375-.1822 1.8099-.5078 2.6172-.9765-.3125.9635-.9114 1.7187-1.7969 2.2656.7813-.1042 1.5626-.3255 2.3438-.6641-.5729.8334-1.263 1.5495-2.0703 2.1485z" fill="#fff"/></svg></a>
+                <a href="#" class="header__social-item"><svg class="button-icon" width="62" height="62" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="31" cy="31" r="30" stroke="#fff" stroke-opacity=".2"/><path d="M31 27.4917c-.8073 0-1.5625.2083-2.2656.625-.6771.3906-1.224.9375-1.6406 1.6406-.3907.6771-.586 1.4193-.586 2.2266 0 .8073.1953 1.5625.586 2.2656.4166.6771.9635 1.224 1.6406 1.6406.7031.3907 1.4583.586 2.2656.586.8073 0 1.5495-.1953 2.2266-.586.7031-.4166 1.25-.9635 1.6406-1.6406.4167-.7031.625-1.4583.625-2.2656 0-.8073-.2083-1.5495-.625-2.2266-.3906-.7031-.9375-1.25-1.6406-1.6406-.6771-.4167-1.4193-.625-2.2266-.625zm0 7.4219c-.8073 0-1.4974-.2865-2.0703-.8594-.5729-.5729-.8594-1.263-.8594-2.0703 0-.8073.2865-1.4974.8594-2.0703.5729-.5729 1.263-.8594 2.0703-.8594.8073 0 1.4974.2865 2.0703.8594.5729.5729.8594 1.263.8594 2.0703 0 .8073-.2865 1.4974-.8594 2.0703-.5729.5729-1.263.8594-2.0703.8594zm5.7422-7.6172c-.0261.2864-.1432.5338-.3516.7422-.1823.2083-.4166.3125-.7031.3125-.2865 0-.5339-.1042-.7422-.3125-.2083-.2084-.3125-.4558-.3125-.7422 0-.2865.1042-.5339.3125-.7422.2083-.2083.4557-.3125.7422-.3125s.5339.1042.7422.3125c.2083.2083.3125.4557.3125.7422zm2.9687 1.0547c-.052-.7552-.1692-1.4063-.3515-1.9532-.2344-.651-.599-1.2109-1.0938-1.6796-.4687-.4948-1.0286-.8594-1.6797-1.0938-.5468-.1823-1.1979-.2864-1.9531-.3125-.7292-.0521-1.9401-.0781-3.6328-.0781s-2.9167.026-3.6719.0781c-.7291.0261-1.3672.1302-1.914.3125-.6511.2344-1.224.599-1.7188 1.0938-.4687.4687-.8203 1.0286-1.0547 1.6796-.1823.5469-.2995 1.198-.3515 1.9532-.0261.7291-.0391 1.9401-.0391 3.6328s.013 2.9167.0391 3.6719c.052.7291.1692 1.3671.3515 1.914.2344.6511.586 1.224 1.0547 1.7188.4948.4687 1.0677.8073 1.7188 1.0156.5468.2083 1.1849.3255 1.914.3516.7552.052 1.9792.0781 3.6719.0781 1.6927 0 2.9036-.0261 3.6328-.0781.7552-.0261 1.4063-.1302 1.9531-.3125.6511-.2344 1.211-.586 1.6797-1.0547.4948-.4948.8594-1.0677 1.0938-1.7188.1823-.5469.2864-1.1849.3125-1.914.0521-.7552.0781-1.9792.0781-3.6719 0-1.6927-.013-2.9037-.0391-3.6328zm-1.875 8.789c-.3125.7813-.8724 1.3412-1.6797 1.6797-.4166.1563-1.1197.2604-2.1093.3125-.5469.0261-1.3542.0391-2.4219.0391h-1.25c-1.0417 0-1.849-.013-2.4219-.0391-.9635-.0521-1.6666-.1562-2.1093-.3125-.7813-.3125-1.3412-.8724-1.6797-1.6797-.1563-.4427-.2605-1.1458-.3125-2.1093-.0261-.573-.0391-1.3802-.0391-2.4219v-1.25c0-1.0417.013-1.849.0391-2.4219.052-.9896.1562-1.6927.3125-2.1094.3125-.8073.8724-1.3672 1.6797-1.6797.4427-.1562 1.1458-.2604 2.1093-.3125.5729-.026 1.3802-.039 2.4219-.039h1.25c1.0417 0 1.849.013 2.4219.039.9896.0521 1.6927.1563 2.1093.3125.8073.3125 1.3672.8724 1.6797 1.6797.1563.4167.2605 1.1198.3125 2.1094.0261.5469.0391 1.3542.0391 2.4219v1.25c0 1.0417-.013 1.8489-.0391 2.4219-.052.9635-.1562 1.6666-.3125 2.1093z" fill="#fff"/></svg></a>
+            </div> 
+              
+        </div>
+        
+    </header> 
+
+    <main class="main">
+          <a name="about"></a>
+          <section class="about">
+            <div class="main-text">
+                <h2 class="main-title">about us</h2>
+                <p>
+                <div class="title-figure">
+                </div>
+                <div class="main-paragraphs">
+                    <p class="main-paragraph main-paragraph_accent">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+                    </p>
+                    <p class="main-paragraph">
+                        Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                    </p>
+                </div>
+            </div>
+            <div class="main-image">
+                <img class="main-image__bg" src="./blocks/main/main-image/main-image__bg/about.jpg" alt="About us">
+                
+            </div>
+        </section> 
+        
+        <section class="team">
+            <a name="team"></a>
+            <h3 class="main-subtitle">OUR TEAM</h3>
+            <div class="about">
+
+            <div class="main-image">
+                <img class="main-image__bg" src="./blocks/main/main-image/main-image__bg/team.jpg" alt="About us">
+                
+            </div>
+            
+            <div class="main-text">
+                    <h2 class="main-title">MASTER CHEF</h2>
+                    <p>
+                    <div class="title-figure">
+                    </div>
+                    <div class="main-paragraphs main main-paragraphs_theme_dark">
+                        <p class="main-paragraph main-paragraph_accent">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+                        </p>
+                        <p class="main-paragraph">
+                            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking">
+            <a name="booking"></a>
+            <div class="booking__main">
+                <div class="main-text">
+                        <h2 class="main-title">book a table</h2>
+                        <p>
+                        <div class="title-figure">
+                        </div>
+                        <form class="booking__form" name="booking">
+                            <div class="booking__form-columns">
+                            <div class="booking__form-column">
+                                <input type="text" name="name" class="booking__input" placeholder="Name">
+                                <input type="tel" name="phone" class="booking__input" placeholder="Phone">
+                                <input type="number" name="date" 
+                                
+                                class="booking__input" placeholder="Date (mm.dd)">
+                             </div>
+
+                             <div class="booking__form-column">
+                                <input type="email" name="email" class="booking__input" placeholder="Email">
+                                <input type="number" name="people" class="booking__input" placeholder="People">
+                                <input type="tex" name="time"
+                                onfocus="(this.type='time')"
+                                onblur="(this.type='text')" 
+                                class="booking__input" placeholder="Time">
+                            </div>
+                                </div>
+                                <button type="submit" class="booking__form-button">BOOK NOW</button>
+                            </form>     
+                       
+                    </div>
+                    <div class="main-image">
+                        <img class="main-image__bg" src="./blocks/main/main-image/main-image__bg/booking.jpg" alt="About us">
+                        
+                    </div>
+                    </div>
+                    <p class="booking__information">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone: +40 729 131 637/+40 726 458 782</p>  
+        </section>
+            
+        <section class="specialties">
+                <a name="menu"></a>
+                <h3 class="main-subtitle"> specialties</h3>
+                <div class="specialties__carousel_wrapper" style="height: 650px;">
+                    <span id="target-item-1"></span>
+                    <span id="target-item-2"></span>
+                    <span id="target-item-3"></span>
+                <div class="about carousel-item item-1">
+    
+                <div class="main-image">
+                    <img class="main-image__bg" src="./blocks/main/main-image/main-image__bg/pancaces.jpg" alt="About us">
+                    
+                </div>
+                
+                <div class="main-text">
+                        <h2 class="main-title">chocolate pancakes</h2>
+                        <p>
+                        <div class="title-figure">
+                        </div>
+                        <div class="main-paragraphs main main-paragraphs_theme_dark">
+                            <p class="main-paragraph main-paragraph_accent">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+                            </p>
+                            <p class="main-paragraph">
+                                Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                            </p>
+                        </div>
+                    </div>
+                    <a class="arrow arrow-prev" href="#target-item-3"></a>
+                    <a class="arrow arrow-next" href="#target-item-2"></a>
+
+                </div>
+                <div class="about carousel-item item-2">
+    
+                    <div class="main-image">
+                        <img class="main-image__bg" src="./blocks/main/main-image/main-image__bg/about.jpg" alt="About us">
+                            
+                    </div>
+                        
+                    <div class="main-text">
+                        <h2 class="main-title">banana pancakes</h2>
+                        <p>
+                        <div class="title-figure">
+                        </div>
+                        <div class="main-paragraphs main main-paragraphs_theme_dark">
+                            <p class="main-paragraph main-paragraph_accent">
+                                Consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+                            </p>
+                            <p class="main-paragraph">
+                                Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                            </p>
+                        </div>
+                    </div>
+                    <a class="arrow arrow-prev" href="#target-item-1"></a>
+                    <a class="arrow arrow-next" href="#target-item-3"></a>
+        
+                </div>
+
+                <div class="about carousel-item item-3">
+
+                    <div class="main-image">
+                        <img class="main-image__bg" src="./blocks/main/main-image/main-image__bg/team.jpg" alt="About us">
+                                    
+                    </div>
+                            
+                    <div class="main-text">
+                        <h2 class="main-title">strawberry pancakes</h2>
+                        <p>
+                        <div class="title-figure">
+                    </div>
+                    <div class="main-paragraphs main-paragraphs_theme_dark">
+                        <p class="main-paragraph main-paragraph_accent">
+                                Integer ullamcorper neque  dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+                        </p>
+                        <p class="main-paragraph">
+                            Purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                        </p>
+                    </div>
+                </div>
+                <a class="arrow arrow-prev" href="#target-item-2"></a>
+                <a class="arrow arrow-next" href="#target-item-1"></a>
+                
+                </div>
+                </div>
+        </section>
+
+        <section class="menu">
+            <div class="main-text">
+                <h2 class="main-title">DELICIOUS MENU</h2>
+                <p>
+                <div class="title-figure">
+            </div>
+            <div class="main-paragraphs main-paragraphs_theme_light">
+                <p class="main-paragraph main-paragraph_accent menu__paragraph">
+                    Integer ullamcorper neque  dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+                </p>
+                <nav class="menu__submenu">
+                    <a class="menu__submenu-item" href="#submenu-item-1">SOUPE</a>
+                    <a class="menu__submenu-item" href="#submenu-item-2">PIZZA</a>
+                    <a class="menu__submenu-item" href="#submenu-item-3">PASTA</a>
+                    <a class="menu__submenu-item" href="#submenu-item-4">DESERT</a>
+                    <a class="menu__submenu-item" href="#submenu-item-5">WINE</a>
+                    <a class="menu__submenu-item" href="#submenu-item-6">BEER</a>
+                    <a class="menu__submenu-item" href="#submenu-item-7">DRINKS</a>
+                </nav>
+                <div class="menu__list list-1 menu__list_hidden">
+                    <p class="menu__cell">SOUPE TETRA FINOPOLE  . . . .   65,38 USD</p>
+                    <p class="menu__cell">SOUPE TETRA FINOPOLE  . . . .   65,38 USD</p>
+                    <p class="menu__cell">SOUPE TETRA FINOPOLE  . . . .   65,38 USD</p>
+                    <p class="menu__cell">SOUPE TETRA FINOPOLE  . . . .   65,38 USD</p>
+                    <p class="menu__cell">SOUPE TETRA FINOPOLE  . . . .   65,38 USD</p>
+                    <p class="menu__cell">SOUPE TETRA FINOPOLE  . . . .   65,38 USD</p>
+                    <p class="menu__cell">SOUPE TETRA FINOPOLE  . . . .   65,38 USD</p>
+                    <p class="menu__cell">SOUPE TETRA FINOPOLE  . . . .   65,38 USD</p>
+                    <p class="menu__cell">SOUPE TETRA FINOPOLE  . . . .   65,38 USD</p>
+                    <p class="menu__cell">SOUPE TETRA FINOPOLE  . . . .   65,38 USD</p>
+                    <p class="menu__cell">SOUPE TETRA FINOPOLE  . . . .   65,38 USD</p>
+                    <p class="menu__cell">SOUPE TETRA FINOPOLE  . . . .   65,38 USD</p>
+                    <p class="menu__cell">SOUPE TETRA FINOPOLE  . . . .   65,38 USD</p>
+                    <p class="menu__cell">SOUPE TETRA FINOPOLE  . . . .   65,38 USD</p>
+                    <p class="menu__cell">SOUPE TETRA FINOPOLE  . . . .   65,38 USD</p>
+
+                </div> 
+                <div class="menu__list list-2">
+                    <p class="menu__cell">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                    <p class="menu__cell">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                    <p class="menu__cell">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                    <p class="menu__cell">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                    <p class="menu__cell">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                    <p class="menu__cell">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                    <p class="menu__cell">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                    <p class="menu__cell">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                    <p class="menu__cell">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                    <p class="menu__cell">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                    <p class="menu__cell">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                    <p class="menu__cell">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                    <p class="menu__cell">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                    <p class="menu__cell">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                    <p class="menu__cell">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                    <p class="menu__cell">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                    <p class="menu__cell">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                    <p class="menu__cell">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                    <p class="menu__cell">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                    <p class="menu__cell">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                    <p class="menu__cell">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                </div>   
+                <div class="menu__list list-3 menu__list_hidden">
+                    <p class="menu__cell">PASTA ITALIANO  . . . .   65,38 USD</p>
+                </div> 
+                <div class="menu__list list-4 menu__list_hidden">
+                    <p class="menu__cell">PANCACE  . . . .   65,38 USD</p>
+                </div> 
+                <div class="menu__list list-5 menu__list_hidden">
+                        <p class="menu__cell"></p>
+                </div> 
+                <div class="menu__list list-6 menu__list_hidden">
+                </div>
+                <div class="menu__list list-7 menu__list_hidden">
+                </div>
+                </div>  
+            </div>
+        </section>
+        
+        <section class="events">
+        <a name="events"></a>
+       <h3 class="main-subtitle">PRIVATE EVENTS</h3>
+        <div class="about">
+
+        <a class="main-image" href="#">
+            <div class="events__title events__title_left">
+                <h2 class="events__title-text">weddings</h2>
+            </div>
+                <img class="main-image__bg" src='./blocks/main/events/weddings.jpg'>
+        </a>
+        <a class="main-image" href="#">
+            <div class="events__title  events__title_right">
+                <h2 class="events__title-text">corporate parties</h2>
+            </div>
+                <img class="main-image__bg" src='./blocks/main/events/party.jpg'>
+        </a>
+    
+        </div>
+        <p class="events__information">For private events please call: +40 729 131 637/+40 726 458 782 or use the contact form.</p>  
+        </section> 
+
+        <section class="contacts">
+        <a name="contact"></a>
+        <div class="main-text">
+                <h2 class="main-title">CONTACT</h2>
+                <p>
+                <div class="title-figure">
+            </div>
+            <div class="main-paragraphs main-paragraphs_theme_light">
+                <p class="main-paragraph main-paragraph_accent menu__paragraph">
+                    Integer ullamcorper neque  dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+                </p>
+            </div> 
+            
+        </div>
+                <form class="contacts__form" name="contact">
+                    <div class="contact__form_inputs">
+                        <input type="text" name="name" class="contacts__input" placeholder="Name">
+                        <input type="tel" name="phone" class="contacts__input" placeholder="Phone">
+                        <input type="number" name="date" class="contacts__input" placeholder="Date (mm.dd)"> </div>
+
+                    </div>
+                        <input type="textarea" name="message" class="contacts__input_area" placeholder="Message">
+                    <div class="contacts__form-submission">    
+                        <div class ="contacts__form-information">
+                            <div class="contacts__tip">
+                            5th London Boulevard, U.K.     
+                            </div> 
+                            <div class="contacts__tip">
+                            +40 729 131 637/+40 726 458 782     
+                            </div>
+                            <a class="contacts__tip" href="mailto:#"> 
+                            office@mindblister.com
+                            </a>
+                        </div>
+                        <button type="submit" class="contacts__form-button">SEND MESSAGE</button>
+                    </div>
+                </form>   
+        </section>
+
+    </main>
+        
+    <footer class="footer">
+        <p class="footer__copyright">© Copyright Mindblister  2019</p>
+    </footer>
+    
+</body>
+</html>

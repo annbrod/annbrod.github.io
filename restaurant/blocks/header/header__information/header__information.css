@@ -1,0 +1,20 @@
+.header__information {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    
+   
+    
+    color: #FFFFFF;
+
+    writing-mode: vertical-rl;
+    -ms-writing-mode: bt-rl;
+    transform: scale(-1, -1);
+
+    position: absolute;
+    
+    left: 0;
+
+    
+}

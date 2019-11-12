@@ -1,0 +1,9 @@
+.booking__main {
+    
+    width: 100%;
+    max-width:  1441px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-evenly;
+   
+}

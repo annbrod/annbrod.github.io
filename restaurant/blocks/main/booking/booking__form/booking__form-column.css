@@ -1,0 +1,8 @@
+.booking__form-column {
+    width: 50%;
+    margin-right: 10px;
+}
+
+.booking__form-column:last-of-type {
+    margin-right: 0;
+}
