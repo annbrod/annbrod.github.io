@@ -42,7 +42,9 @@ function createCard(nameValue, linkValue) {
 </div>`
   );
   placeCard.querySelector(".place-card__name").textContent = nameValue;
-  placeCard.querySelector(".place-card__image").style.backgroundImage = `url(${linkValue})`;
+  placeCard.querySelector(
+    ".place-card__image"
+  ).style.backgroundImage = `url(${linkValue})`;
 
   return placeCard;
 }
