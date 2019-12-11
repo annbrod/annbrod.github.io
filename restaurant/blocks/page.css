@@ -13,7 +13,7 @@
 
 
 .page {
-    
+    scroll-behavior: smooth;
     max-width: 1441px;
     margin: 0 auto;
     background-color: white;
